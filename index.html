@@ -9,16 +9,79 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./src/assets/styles/main.css">   
+    <link rel="stylesheet" href="./src/assets/styles/components.css">
 </head>
 <body>
     <div id="app">
-        <div class="glass-card">
-            <h1>StudyHub Platformasına Xoş Gelmisiniz!</h1>
-            <p style="color: var(--text-muted); margin-top: 10px;">
-                2-ci günün CSS renk paleti ve Glassmorphism tasarımı başarıyla uygulandı.
+        <header class="main-header">
+            <nav class="navbar">
+                <a href="#" class="navbar-logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h2>StudyHub</h2>
+                        <span>Ağıllı Təhsil Ekosistemi</span>
+                    </div>
+                </a>
 
+                <!-- Navigation Links -->
+                <ul class="nav-links">
+                    <li class="nav-item">
+                        <a href="#"><i class="fa-solid fa-house"></i> Əsas Səhifə</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"><i class="fa-solid fa-flask"></i> Labaratoriyalar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"><i class="fa-solid fa-file-pen"></i> Sınaqlar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"><i class="fa-solid fa-chalkboard-user"></i> Müəllimlər</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"><i class="fa-solid fa-users"></i> İcma / Qruplar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"><i class="fa-solid fa-calendar-check"></i> Planlayıcı</a>
+                    </li>
+                </ul> 
+                <div class="navbar-right">
+                    <!--ofline status -->
+                    <div class="status-badge" id="network-status">
+                        <span class="status-dot"></span>
+                        <span class="status-text">Oflayin rejim aktivdir</span>
+                    </div>
+                    
+                    <!--Bildiris ikonu -->
+
+                    <button class="nav-icon-btn" title="Bildirişlər">
+                        <i class="fa-solid fa-bell"></i>
+                    </button>
+
+
+                    <!--istifadeci profil karti-->
+                    <div class="user-profile">
+                        <div class="user-avatar">JQ</div>
+                        <div class="user-info">
+                            <span class="user-name">Jale Qocayeva</span>
+                            <span class="user-role">Sagird</span>
+                        </div>
+                        <i class="fa-solid fa-chervon-down" style="font-size: 0.7rem; color: var(--text-muted); margin-left: 4px;"></i>
+                    </div>
+                </div>
+            </nav>     
+        </header>
+        
+
+        <!-- Test Kontenti -->
+
+        <div class="test-content">
+            <h1>Navbar added succesfully</h1>
+            <p style="color: var(--text-muted); margin-top: 10px;">
+                3-cü günün naviqasiya menyusu və stil elementləri hazırdır.
             </p>
-        </div>
+        </div> 
     </div>
     <script src="./src/scripts/app.js"></script>
 </body>
