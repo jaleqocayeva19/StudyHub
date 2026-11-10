@@ -64,3 +64,107 @@ body {
     margin: 0 auto;
     padding: 20px;
 }
+
+
+/* ==========================================
+   6-CI GÜN: 3-SÜTUNLU DASHBOARD LAYOUT
+   ==========================================
+*/
+.dashboard-layout {
+    display: grid;
+    grid-template-columns: 240px 1fr 300px; /* Sol: 240px, Mərkəz: sərbəst, Sağ: 300px */
+    gap: 24px;
+    margin-top: 20px;
+    align-items: start;
+}
+
+/* Sol və Sağ Sütunlar */
+.left-sidebar, .right-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Mərkəzi Sahə */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Responsive: Ekran balacalaşdıqda 1 sütuna keçid */
+@media (max-width: 1100px) {
+    .dashboard-layout {
+        grid-template-columns: 1fr 300px;
+    }
+    .left-sidebar {
+        display: none; /* Mobildə sol menyu gizlənir */
+    }
+}
+
+@media (max-width: 850px) {
+    .dashboard-layout {
+        grid-template-columns: 1fr;
+    }
+    .right-sidebar {
+        order: 2;
+    }
+}
+
+/* ==========================================
+   10-CU GÜN: MOBİL VƏ PLANŞET UYĞUNLAŞDIRMASI
+   ==========================================
+*/
+
+/* Planşet Ekranları Üçün (Maksimum 1024px) */
+@media (max-width: 1024px) {
+    .dashboard-layout {
+        grid-template-columns: 1fr 280px; /* Sol menyunu gizlədib mərkəz və sağ paneli saxlayırıq */
+        gap: 16px;
+    }
+    
+    .left-sidebar {
+        display: none;
+    }
+}
+
+/* Mobil Ekranlar Üçün (Maksimum 768px) */
+@media (max-width: 768px) {
+    #app {
+        padding: 12px;
+    }
+
+    .main-header {
+        top: 8px;
+        margin-bottom: 16px;
+    }
+
+    .navbar {
+        padding: 10px 14px;
+    }
+
+    /* Mobildə menyu yazılarının yığcamlaşdırılması */
+    .nav-links {
+        display: none !important; /* Mərkəzi menyu daxilini mobildə müvəqqəti gizlədirik */
+    }
+
+    .logo-text span {
+        display: none; /* Logo altındakı "Ağıllı Təhsil Ekosistemi" mətni mobildə gizlənir */
+    }
+
+    .dashboard-layout {
+        grid-template-columns: 1fr; /* Bütün layout-u tək sütun şəklinə salırıq */
+    }
+
+    .right-sidebar {
+        order: 2; /* Mobil ekranda sağ panel mərkəzi məzmunun altına keçir */
+    }
+
+    .welcome-content {
+        max-width: 100%;
+    }
+
+    .welcome-illustration {
+        display: none; /* Mobildə arxadakı böyük raket ikonunu gizlədirik */
+    }
+}

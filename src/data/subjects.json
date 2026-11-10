@@ -1,0 +1,38 @@
+[
+  {
+    "id": "math",
+    "name": "Riyaziyyat",
+    "icon": "fa-solid fa-calculator",
+    "gradient": "linear-gradient(135deg, #3b82f6, #1d4ed8)",
+    "topicsCount": 24,
+    "grade": "8-11-ci siniflər",
+    "description": "Funksiyalar, parabolar və Desmos qrafik inteqrasiyalı riyazi təhlillər."
+  },
+  {
+    "id": "physics",
+    "name": "Fizika",
+    "icon": "fa-solid fa-atom",
+    "gradient": "linear-gradient(135deg, #8b5cf6, #6d28d9)",
+    "topicsCount": 18,
+    "grade": "7-11-ci siniflər",
+    "description": "PhET interaktiv laboratoriya simulyasiyaları və dinamika təcrübələri."
+  },
+  {
+    "id": "chemistry",
+    "name": "Kimya",
+    "icon": "fa-solid fa-flask-vial",
+    "gradient": "linear-gradient(135deg, #ec4899, #be185d)",
+    "topicsCount": 15,
+    "grade": "8-11-ci siniflər",
+    "description": "Molekulyar reaksiya simulyasiyaları və kimyəvi elementlərin təhlili."
+  },
+  {
+    "id": "history",
+    "name": "Tarix",
+    "icon": "fa-solid fa-landmark",
+    "gradient": "linear-gradient(135deg, #f97316, #c2410c)",
+    "topicsCount": 30,
+    "grade": "5-11-ci siniflər",
+    "description": "Azərbaycan və Dünya tarixi xronoloji xəritəsi və interaktiv testlər."
+  }
+]

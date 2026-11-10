@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StudyHub</title>
+    <title>StudyHub — İnteraktiv və Oflayn Təhsil Platforması</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -13,6 +13,7 @@
 </head>
 <body>
     <div id="app">
+        <!-- HEADER / NAVBAR -->
         <header class="main-header">
             <nav class="navbar">
                 <a href="#" class="navbar-logo">
@@ -25,13 +26,13 @@
                     </div>
                 </a>
 
-                <!-- Navigation Links -->
+                <!-- Naviqasiya Keçidləri -->
                 <ul class="nav-links">
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a href="#"><i class="fa-solid fa-house"></i> Əsas Səhifə</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#"><i class="fa-solid fa-flask"></i> Labaratoriyalar</a>
+                        <a href="#"><i class="fa-solid fa-flask"></i> Laboratoriyalar</a>
                     </li>
                     <li class="nav-item">
                         <a href="#"><i class="fa-solid fa-file-pen"></i> Sınaqlar</a>
@@ -46,43 +47,173 @@
                         <a href="#"><i class="fa-solid fa-calendar-check"></i> Planlayıcı</a>
                     </li>
                 </ul> 
+
                 <div class="navbar-right">
-                    <!--ofline status -->
+                    <!-- Oflayn Status -->
                     <div class="status-badge" id="network-status">
                         <span class="status-dot"></span>
-                        <span class="status-text">Oflayin rejim aktivdir</span>
+                        <span class="status-text">Oflayn rejim aktivdir</span>
                     </div>
                     
-                    <!--Bildiris ikonu -->
-
+                    <!-- Bildiriş İkonu -->
                     <button class="nav-icon-btn" title="Bildirişlər">
                         <i class="fa-solid fa-bell"></i>
                     </button>
 
-
-                    <!--istifadeci profil karti-->
+                    <!-- İstifadəçi Profil Kartı -->
                     <div class="user-profile">
                         <div class="user-avatar">JQ</div>
                         <div class="user-info">
-                            <span class="user-name">Jale Qocayeva</span>
-                            <span class="user-role">Sagird</span>
+                            <span class="user-name">Jalə Qocayeva</span>
+                            <span class="user-role">Şagird</span>
                         </div>
-                        <i class="fa-solid fa-chervon-down" style="font-size: 0.7rem; color: var(--text-muted); margin-left: 4px;"></i>
+                        <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; color: var(--text-muted); margin-left: 4px;"></i>
                     </div>
                 </div>
             </nav>     
         </header>
         
+        <!-- 6-CI GÜN: 3-SÜTUNLU ƏSAS DASHBOARD LAYOUT -->
+        <div class="dashboard-layout">
+            
+            <!-- 1. SOL PANEL (Fənlər & Kateqoriyalar) -->
+            <aside class="left-sidebar">
+                <div class="glass-card">
+                    <h3 style="font-size: 1rem; margin-bottom: 12px; color: var(--text-white);">Fənlər</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-muted);">Sol Panel (Kateqoriyalar)</p>
+                </div>
+            </aside>
 
-        <!-- Test Kontenti -->
+            <!-- 2. MƏRKƏZİ İŞ SAHƏSİ (Main Content) -->
+            <!-- 2. MƏRKƏZİ İŞ SAHƏSİ (MAIN CONTENT) -->
+            <!-- 2. MƏRKƏZİ İŞ SAHƏSİ (MAIN CONTENT) -->
+            <main class="main-content">
+                
+                <!-- Welcome Banner -->
+                <div class="glass-card welcome-banner">
+                    <div class="welcome-content">
+                        <div class="welcome-badge">
+                            <i class="fa-solid fa-sparkles"></i> Gündəlik Motivasiya
+                        </div>
+                        <h2 class="welcome-title">Yenidən Xoş Gəldin, Jalə! 👋</h2>
+                        <p class="welcome-subtitle">
+                            Bu gün üçün planlaşdırılan 3 tapşırıq və 1 Fizika simulyasiyası gözləyir. İnternetsiz rejimdə öyrənməyə davam et!
+                        </p>
+                        <a href="#" class="btn-primary">
+                            <i class="fa-solid fa-play"></i> Dərslərə Başla
+                        </a>
+                    </div>
+                    <div class="welcome-illustration">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+                </div>
 
-        <div class="test-content">
-            <h1>Navbar added succesfully</h1>
-            <p style="color: var(--text-muted); margin-top: 10px;">
-                3-cü günün naviqasiya menyusu və stil elementləri hazırdır.
-            </p>
+                <!-- 13-CÜ GÜN: FƏNLƏR BÖLMƏSİ -->
+                <section class="subjects-section">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+                        <h3 style="font-size: 1.1rem; color: var(--text-white);">Fənlər və Laboratoriyalar</h3>
+                        <span style="font-size: 0.8rem; color: var(--primary-purple); cursor: pointer; font-weight: 500;">Bütününü Gör <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+
+                    <!-- JS vasitəsilə JSON kartları bura yüklənəcək -->
+                    <div class="subjects-grid" id="subjects-container">
+                        <p style="color: var(--text-muted); font-size: 0.85rem;">Fənlər yüklənir...</p>
+                    </div>
+                </section>
+
+            </main>
+
+            <!-- 3. SAĞ PANEL (Statistika & Gamification) -->
+            <!-- 3. SAĞ PANEL (GAMIFICATION & Aİ MENTOR) -->
+            <aside class="right-sidebar">
+                
+                <!-- 1. Daily Streak Card -->
+                <div class="glass-card streak-card">
+                    <div class="streak-info">
+                        <div class="streak-icon">
+                            <i class="fa-solid fa-fire"></i>
+                        </div>
+                        <div class="streak-text">
+                            <h4>Daily Streak</h4>
+                            <p>7 Günlük Seri</p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-right" style="color: var(--text-muted); font-size: 0.8rem;"></i>
+                </div>
+
+                <!-- 2. Total XP & Level Card -->
+                <div class="glass-card">
+                    <div class="xp-header">
+                        <span class="xp-title">Total XP</span>
+                        <span class="xp-value">2,450 XP</span>
+                    </div>
+                    <div class="xp-bar-bg">
+                        <div class="xp-bar-fill"></div>
+                    </div>
+                    <div class="level-badge">
+                        <div class="level-tag">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <span>STEM Usta</span>
+                        </div>
+                        <span style="color: var(--text-muted);">Level 12</span>
+                    </div>
+                </div>
+
+                <!-- 3. Active Challenge Card -->
+                <div class="glass-card challenge-card">
+                    <div class="challenge-header">
+                        <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500;">Active Challenge</span>
+                    </div>
+                    <div class="challenge-box">
+                        <div>
+                            <h5 style="font-size: 0.85rem; color: var(--text-white);">Həftəlik Fizika Dueli</h5>
+                            <span style="font-size: 0.75rem; color: var(--text-muted);">11-A Sinfi</span>
+                        </div>
+                        <i class="fa-solid fa-swords" style="color: var(--primary-purple); font-size: 1.1rem;"></i>
+                    </div>
+                </div>
+
+                <!-- 4. XP Liderlər Cədvəli -->
+                <div class="glass-card">
+                    <h4 style="font-size: 0.9rem; margin-bottom: 12px; color: var(--text-white);">XP Liderlər Cədvəli</h4>
+                    
+                    <div class="leader-item">
+                        <div class="leader-user">
+                            <span class="leader-rank rank-1">1</span>
+                            <span>Aysel M.</span>
+                        </div>
+                        <span style="font-size: 0.8rem; font-weight: 600; color: #eab308;">3,120 XP</span>
+                    </div>
+
+                    <div class="leader-item">
+                        <div class="leader-user">
+                            <span class="leader-rank rank-2">2</span>
+                            <span>Jalə Q.</span>
+                        </div>
+                        <span style="font-size: 0.8rem; font-weight: 600; color: #94a3b8;">2,450 XP</span>
+                    </div>
+
+                    <div class="leader-item">
+                        <div class="leader-user">
+                            <span class="leader-rank rank-3">3</span>
+                            <span>Murad K.</span>
+                        </div>
+                        <span style="font-size: 0.8rem; font-weight: 600; color: #b45309;">2,100 XP</span>
+                    </div>
+                </div>
+
+            </aside>
+
         </div> 
     </div>
+
+    <!-- JavaScript Məntiq Faylları -->
     <script src="./src/scripts/app.js"></script>
+    <script src="./src/scripts/pwa-handler.js"></script>
+    <!-- ES6 Modul bağlantısı -->
+    <script type="module" src="./src/scripts/app.js"></script>
+    <script src="./src/scripts/pwa-handler.js"></script>
+</body>
+</html>
 </body>
 </html>
