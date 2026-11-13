@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="az">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="./src/assets/styles/main.css">   
+    <link rel="stylesheet" href="./src/assets/styles/main.css">
     <link rel="stylesheet" href="./src/assets/styles/components.css">
 </head>
+
 <body>
     <div id="app">
         <!-- HEADER / NAVBAR -->
@@ -46,7 +48,7 @@
                     <li class="nav-item">
                         <a href="#"><i class="fa-solid fa-calendar-check"></i> Planlayıcı</a>
                     </li>
-                </ul> 
+                </ul>
 
                 <div class="navbar-right">
                     <!-- Oflayn Status -->
@@ -54,7 +56,7 @@
                         <span class="status-dot"></span>
                         <span class="status-text">Oflayn rejim aktivdir</span>
                     </div>
-                    
+
                     <!-- Bildiriş İkonu -->
                     <button class="nav-icon-btn" title="Bildirişlər">
                         <i class="fa-solid fa-bell"></i>
@@ -67,15 +69,16 @@
                             <span class="user-name">Jalə Qocayeva</span>
                             <span class="user-role">Şagird</span>
                         </div>
-                        <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; color: var(--text-muted); margin-left: 4px;"></i>
+                        <i class="fa-solid fa-chevron-down"
+                            style="font-size: 0.7rem; color: var(--text-muted); margin-left: 4px;"></i>
                     </div>
                 </div>
-            </nav>     
+            </nav>
         </header>
-        
+
         <!-- 6-CI GÜN: 3-SÜTUNLU ƏSAS DASHBOARD LAYOUT -->
         <div class="dashboard-layout">
-            
+
             <!-- 1. SOL PANEL (Fənlər & Kateqoriyalar) -->
             <aside class="left-sidebar">
                 <div class="glass-card">
@@ -88,7 +91,7 @@
             <!-- 2. MƏRKƏZİ İŞ SAHƏSİ (MAIN CONTENT) -->
             <!-- 2. MƏRKƏZİ İŞ SAHƏSİ (MAIN CONTENT) -->
             <main class="main-content">
-                
+
                 <!-- Welcome Banner -->
                 <div class="glass-card welcome-banner">
                     <div class="welcome-content">
@@ -97,7 +100,8 @@
                         </div>
                         <h2 class="welcome-title">Yenidən Xoş Gəldin, Jalə! 👋</h2>
                         <p class="welcome-subtitle">
-                            Bu gün üçün planlaşdırılan 3 tapşırıq və 1 Fizika simulyasiyası gözləyir. İnternetsiz rejimdə öyrənməyə davam et!
+                            Bu gün üçün planlaşdırılan 3 tapşırıq və 1 Fizika simulyasiyası gözləyir. İnternetsiz
+                            rejimdə öyrənməyə davam et!
                         </p>
                         <a href="#" class="btn-primary">
                             <i class="fa-solid fa-play"></i> Dərslərə Başla
@@ -108,11 +112,23 @@
                     </div>
                 </div>
 
-                <!-- 13-CÜ GÜN: FƏNLƏR BÖLMƏSİ -->
+                <!-- FƏNLƏR VƏ SİNİF FİLTRİ -->
                 <section class="subjects-section">
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
                         <h3 style="font-size: 1.1rem; color: var(--text-white);">Fənlər və Laboratoriyalar</h3>
-                        <span style="font-size: 0.8rem; color: var(--primary-purple); cursor: pointer; font-weight: 500;">Bütününü Gör <i class="fa-solid fa-arrow-right"></i></span>
+                        <span
+                            style="font-size: 0.8rem; color: var(--primary-purple); cursor: pointer; font-weight: 500;">Bütününü
+                            Gör <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+
+                    <!-- 17-ci Gün: Sinif Filtrləmə Düymələri (Bura əlavə olundu) -->
+                    <div class="grade-filter-container" id="grade-filter-box">
+                        <button class="grade-btn active" data-grade="all">Bütün Siniflər</button>
+                        <button class="grade-btn" data-grade="8">8-ci Sinif</button>
+                        <button class="grade-btn" data-grade="9">9-cu Sinif</button>
+                        <button class="grade-btn" data-grade="10">10-cu Sinif</button>
+                        <button class="grade-btn" data-grade="11">11-ci Sinif</button>
                     </div>
 
                     <!-- JS vasitəsilə JSON kartları bura yüklənəcək -->
@@ -120,13 +136,12 @@
                         <p style="color: var(--text-muted); font-size: 0.85rem;">Fənlər yüklənir...</p>
                     </div>
                 </section>
-
             </main>
 
             <!-- 3. SAĞ PANEL (Statistika & Gamification) -->
             <!-- 3. SAĞ PANEL (GAMIFICATION & Aİ MENTOR) -->
             <aside class="right-sidebar">
-                
+
                 <!-- 1. Daily Streak Card -->
                 <div class="glass-card streak-card">
                     <div class="streak-info">
@@ -162,7 +177,8 @@
                 <!-- 3. Active Challenge Card -->
                 <div class="glass-card challenge-card">
                     <div class="challenge-header">
-                        <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500;">Active Challenge</span>
+                        <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500;">Active
+                            Challenge</span>
                     </div>
                     <div class="challenge-box">
                         <div>
@@ -175,8 +191,9 @@
 
                 <!-- 4. XP Liderlər Cədvəli -->
                 <div class="glass-card">
-                    <h4 style="font-size: 0.9rem; margin-bottom: 12px; color: var(--text-white);">XP Liderlər Cədvəli</h4>
-                    
+                    <h4 style="font-size: 0.9rem; margin-bottom: 12px; color: var(--text-white);">XP Liderlər Cədvəli
+                    </h4>
+
                     <div class="leader-item">
                         <div class="leader-user">
                             <span class="leader-rank rank-1">1</span>
@@ -204,7 +221,79 @@
 
             </aside>
 
-        </div> 
+        </div>
+    </div>
+
+    <!-- 14-CÜ GÜN: MÖVZULAR İÇİN MODAL PƏNCƏRƏSİ -->
+    <div class="modal-overlay" id="topics-modal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3 id="modal-subject-title" style="color: var(--text-white); font-size: 1.2rem;">Fənn Mövzuları</h3>
+                <button class="modal-close-btn" id="close-modal-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div id="topics-list-container">
+                <p style="color: var(--text-muted); font-size: 0.85rem;">Mövzular yüklənir...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 16-CI GÜN: PHET SİMULYASİYA VIEWER MODALI -->
+    <div class="modal-overlay" id="sim-modal">
+        <div class="sim-modal-container">
+            <div class="modal-header" style="padding: 16px 20px; background: rgba(30, 41, 59, 0.8);">
+                <h3 id="sim-modal-title" style="color: var(--text-white); font-size: 1.1rem;">Interaktiv Simulyasiya
+                </h3>
+                <button class="modal-close-btn" id="close-sim-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <iframe id="sim-iframe" class="sim-iframe" src="" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- 18-CI GÜN: NƏZƏRİ DƏRS Oxuma MODALI -->
+    <div class="modal-overlay" id="lesson-modal">
+        <div class="modal-container" style="max-width: 700px;">
+            <div class="modal-header">
+                <h3 id="lesson-modal-title" style="color: var(--text-white); font-size: 1.2rem;">Dərs İzahı</h3>
+                <button class="modal-close-btn" id="close-lesson-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div id="lesson-modal-body">
+                <!-- Dərs mətni JS ilə buraya yüklənəcək -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 19-CU GÜN: DESMOS QRAFİK KALKULYATOR MODALI -->
+    <div class="modal-overlay" id="desmos-modal">
+        <div class="desmos-modal-container">
+            <div class="modal-header" style="padding: 16px 20px; background: rgba(30, 41, 59, 0.8);">
+                <h3 id="desmos-modal-title" style="color: var(--text-white); font-size: 1.1rem;">Desmos Qrafik Kalkulyatorı</h3>
+                <button class="modal-close-btn" id="close-desmos-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <iframe id="desmos-iframe" class="desmos-iframe" src="" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- 20-CI GÜN: İNTERAKTİV SİNAQ MODALI -->
+    <div class="modal-overlay" id="quiz-modal">
+        <div class="modal-container" style="max-width: 650px;">
+            <div class="modal-header">
+                <h3 id="quiz-modal-title" style="color: var(--text-white); font-size: 1.1rem;">Sınaq Testi</h3>
+                <button class="modal-close-btn" id="close-quiz-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div id="quiz-modal-body">
+                <!-- Sual və cavablar JS ilə daxil ediləcək -->
+            </div>
+        </div>
     </div>
 
     <!-- JavaScript Məntiq Faylları -->
@@ -214,6 +303,8 @@
     <script type="module" src="./src/scripts/app.js"></script>
     <script src="./src/scripts/pwa-handler.js"></script>
 </body>
+
 </html>
 </body>
+
 </html>

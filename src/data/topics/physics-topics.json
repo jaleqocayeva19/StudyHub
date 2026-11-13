@@ -1,0 +1,89 @@
+[
+  {
+    "unitId": "unit-0",
+    "unitTitle": "Giriş",
+    "topics": [
+      {
+        "id": "phys-7-0-1",
+        "title": "Fizika nəyi öyrənir?",
+        "grade": 7,
+        "part": 1,
+        "duration": "15 dəq",
+        "xp": 40,
+        "type": "theory"
+      },
+      {
+        "id": "phys-7-0-2",
+        "title": "Fiziklər təbiət haqqında nə bilirlər?",
+        "grade": 7,
+        "part": 1,
+        "duration": "15 dəq",
+        "xp": 40,
+        "type": "theory"
+      },
+      {
+        "id": "phys-7-0-3",
+        "title": "Fiziklər təbiəti necə öyrənirlər?",
+        "grade": 7,
+        "part": 1,
+        "duration": "20 dəq",
+        "xp": 50,
+        "type": "theory"
+      },
+      {
+        "id": "phys-7-0-4",
+        "title": "Fizikanın əhəmiyyəti",
+        "grade": 7,
+        "part": 1,
+        "duration": "15 dəq",
+        "xp": 40,
+        "type": "theory"
+      }
+    ]
+  },
+  {
+    "unitId": "unit-1",
+    "unitTitle": "Bölmə 1: Fiziki kəmiyyətlər və onların ölçülməsi",
+    "topics": [
+      {
+        "id": "phys-7-1-1",
+        "title": "1.1 Fiziki kəmiyyətlər",
+        "grade": 7,
+        "part": 1,
+        "duration": "25 dəq",
+        "xp": 60,
+        "type": "interactive",
+        "hasLessonText": true,
+        "hasQuiz": true
+      },
+      {
+        "id": "phys-7-1-2",
+        "title": "1.2 Fiziki kəmiyyətlərin ölçülməsi",
+        "grade": 7,
+        "part": 1,
+        "duration": "20 dəq",
+        "xp": 50,
+        "type": "simulation",
+        "phetUrl": "https://phet.colorado.edu/sims/html/estimation/latest/estimation_all.html"
+      },
+      {
+        "id": "phys-7-1-3",
+        "title": "1.3 Ölçmədə dəqiqlik",
+        "grade": 7,
+        "part": 1,
+        "duration": "20 dəq",
+        "xp": 50,
+        "type": "theory"
+      },
+      {
+        "id": "phys-7-1-4",
+        "title": "1.4 Skalyar və vektorial kəmiyyətlər",
+        "grade": 7,
+        "part": 1,
+        "duration": "25 dəq",
+        "xp": 60,
+        "type": "theory"
+      }
+    ]
+  }
+]

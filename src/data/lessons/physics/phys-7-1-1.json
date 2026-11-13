@@ -1,0 +1,48 @@
+{
+  "id": "phys-7-1-1",
+  "title": "1.1 Fiziki kəmiyyətlər",
+  "keywords": ["fiziki kəmiyyət", "ölçü vahidi", "əsas vahid", "törəmə vahid"],
+  "content": [
+    {
+      "type": "text",
+      "heading": "Cismin və ya hadisənin ölçmə və ya hesablama ilə müəyyən olunan xüsusiyyətləri",
+      "body": "Fiziki hadisələri öyrənərkən alimlər müşahidə və ölçmə aparmaqla məlumat toplayırlar. Cismin və ya hadisənin ölçmə və ya hesablama ilə müəyyən olunan xüsusiyyətləri fiziki kəmiyyətlər adlanır. Müəyyən bir fiziki kəmiyyəti ölçmək – onu bu kəmiyyət üçün vahid qəbul edilmiş etalonla mukayisə etməkdir."
+    },
+    {
+      "type": "text",
+      "heading": "Beynəlxalq Vahidər Sistemi (BS)",
+      "body": "Sadəlik üçün bir çox ölkələr fiziki kəmiyyətləri ortaqlı vahidlərlə ölçür. Qəbul edilmiş ortaqlı vahidlər sistemi Beynəlxalq Vahidər Sistemi (BS) adlanır. BS-də uzunluq (metr), kütlə (kiloqram) və zaman (saniyə) əsas vahidlər hesab olunur."
+    },
+    {
+      "type": "table",
+      "title": "BS-də əsas vahidlər",
+      "headers": ["Kəmiyyətin adı", "Şərti işarəsi", "BS-də ölçü vahidi", "Vahidin şərti işarəsi"],
+      "rows": [
+        ["uzunluq", "l", "metr", "m"],
+        ["kütlə", "m", "kiloqram", "kq"],
+        ["zaman", "t", "saniyə", "san"]
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Məsələ həlli nümunəsi",
+      "problem": "Otağın döşəməsi tərəfləri 4 m və 6 m olan düzbucaqlı formasındadır. Döşəmənin sahəsini kvadrat desimetrlə hesablayın.",
+      "given": "a = 4 m = 40 dm, b = 6 m = 60 dm",
+      "formula": "S = a · b",
+      "solution": "S = 40 dm · 60 dm = 2400 dm²",
+      "answer": "2400 dm²"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Aşağıdakılardan hansı BS-də əsas vahiddir?",
+      "options": ["Santimetr", "Kiloqram", "Kvadrat metr", "Qram"],
+      "answer": 1
+    },
+    {
+      "question": "Tərəfinin uzunluğu 20 sm olan kvadratın sahəsi neçə dm²-dir?",
+      "options": ["4 dm²", "40 dm²", "400 dm²", "0.4 dm²"],
+      "answer": 0
+    }
+  ]
+}

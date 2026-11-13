@@ -1,0 +1,72 @@
+{
+  "physics": [
+    {
+      "id": "phys-101",
+      "title": "Nyu-tonun Hərəkət Qanunları",
+      "grade": 8,
+      "duration": "15 dəq",
+      "xp": 50,
+      "type": "simulation",
+      "phetUrl": "https://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics_all.html",
+      "completed": false
+    },
+    {
+      "id": "phys-102",
+      "title": "Enerjinin Saxlanması Qanunu",
+      "grade": 9,
+      "duration": "20 dəq",
+      "xp": 70,
+      "type": "theory",
+      "summary": "Qapalı sistemdə tam mexaniki enerji sabit qalır və yalnız bir növdən digərinə çevrilir.",
+      "content": "Tam mexaniki enerji kinetik və potensial enerjilərin cəminə bərabərdir. Xarici sürtünmə qüvvələri nəzərə alınmadıqda, cismin potensial enerjisi azaldıqca kinetik enerjisi bir o qədər artır.",
+      "formula": "E = E_k + E_p = const",
+      "completed": true
+    }
+  ],
+  "math": [
+    {
+      "id": "math-101",
+      "title": "Kvadrat Funksiyalar və Parabolalar",
+      "grade": 9,
+      "duration": "25 dəq",
+      "xp": 60,
+      "type": "desmos",
+      "completed": false
+    }
+  ],
+  "chemistry": [
+    {
+      "id": "chem-101",
+      "title": "Dövri Sistem və Atom Quruluşu",
+      "grade": 8,
+      "duration": "18 dəq",
+      "xp": 55,
+      "type": "simulation",
+      "phetUrl": "https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_all.html",
+      "completed": false
+    }
+  ],
+  "history": [
+    {
+      "id": "hist-101",
+      "title": "Səfəvilər Dövlətinin Yaranması",
+      "grade": 10,
+      "duration": "30 dəq",
+      "xp": 80,
+      "type": "interactive",
+      "quiz": [
+        {
+          "question": "Səfəvilər dövlətinin əsası neçənci ildə və kim tərəfindən qoyulmuşdur?",
+          "options": [
+            "1501-ci il — Şah İsmayıl Xətai",
+            "1499-cu il — Uzun Həsən",
+            "1514-cü il — Şah Təhmasib",
+            "1587-ci il — I Şah Abbas"
+          ],
+          "answer": 0
+        }
+      ],
+      "completed": false
+    }
+  ]
+}
